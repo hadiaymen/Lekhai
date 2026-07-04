@@ -1,0 +1,78 @@
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./store/**/*.{js,ts,jsx,tsx}",
+  ],
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        background: "#0e0e0e",
+        surface: "#131313",
+        "surface-dim": "#131313",
+        "surface-bright": "#393939",
+        "surface-container-lowest": "#0e0e0e",
+        "surface-container-low": "#1b1b1b",
+        "surface-container": "#1f1f1f",
+        "surface-container-high": "#2a2a2a",
+        "surface-container-highest": "#353535",
+        "surface-variant": "#353535",
+        primary: "#ffffff",
+        "on-primary": "#2f3131",
+        "primary-container": "#e2e2e2",
+        "on-primary-container": "#636565",
+        "on-surface": "#e2e2e2",
+        "on-surface-variant": "#c4c7c8",
+        "inverse-surface": "#e2e2e2",
+        "inverse-on-surface": "#303030",
+        secondary: "#c8c6c5",
+        "on-secondary": "#313030",
+        "secondary-container": "#474746",
+        "on-secondary-container": "#b7b5b4",
+        tertiary: "#ffffff",
+        "on-tertiary": "#2f3131",
+        outline: "#8e9192",
+        "outline-variant": "#444748",
+        error: "#ffb4ab",
+        "on-error": "#690005",
+        "error-container": "#93000a",
+        "on-error-container": "#ffdad6",
+        "on-background": "#e2e2e2",
+        "surface-tint": "#c6c6c7",
+      },
+      borderRadius: {
+        DEFAULT: "1rem",
+        sm: "0.5rem",
+        md: "1.5rem",
+        lg: "2rem",
+        xl: "3rem",
+        full: "9999px",
+      },
+      spacing: {
+        gutter: "24px",
+        "margin-desktop": "48px",
+        "margin-mobile": "16px",
+        "container-max": "1440px",
+      },
+      fontFamily: {
+        geist: ["Geist", "sans-serif"],
+        mono: ["JetBrains Mono", "monospace"],
+      },
+      fontSize: {
+        "display-lg": ["48px", { lineHeight: "1.1", letterSpacing: "-0.02em", fontWeight: "600" }],
+        "headline-lg": ["32px", { lineHeight: "1.2", letterSpacing: "-0.01em", fontWeight: "500" }],
+        "headline-md": ["24px", { lineHeight: "1.3", fontWeight: "500" }],
+        "body-lg": ["18px", { lineHeight: "1.6", fontWeight: "400" }],
+        "body-md": ["16px", { lineHeight: "1.5", fontWeight: "400" }],
+        "label-md": ["14px", { lineHeight: "1.4", letterSpacing: "0.05em", fontWeight: "500" }],
+        "label-sm": ["12px", { lineHeight: "1.4", fontWeight: "500" }],
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
